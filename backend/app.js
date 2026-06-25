@@ -14,6 +14,7 @@ const requirementRoutes = require("./routes/requirementRoutes");
 const searchRoutes = require("./routes/searchRoutes");
 const { protect } = require("./middleware/authMiddleware");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
+const connectDB = require("./config/db");
 
 const app = express();
 
